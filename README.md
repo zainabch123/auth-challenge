@@ -31,7 +31,7 @@ Take a little bit of time to familiarise yourself with the project structure - t
 ## Instructions
 
 - Run the app with `npm start` - this will open a React app in your browser *and* run the express server. The server will default to port `4000`, you can change this by adding an `API_PORT` variable to your `.env` if you want.
-- Work through each file in the `requirements` directory in numerical order.
+- Work through each file in the `requirements` directory in numerical order. You can choose whether to work on the Client or Server version of each requirement first, but you may find it easier to do Server first.
 
 ## Example solution
 ![](./assets/Auth_Challenge.PNG)
