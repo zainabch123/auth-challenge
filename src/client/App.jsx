@@ -3,7 +3,7 @@ import './App.css';
 import MovieForm from './components/MovieForm';
 import UserForm from './components/UserForm';
 
-const port = process.env.PORT || 4000
+const port = import.meta.env.VITE_PORT;
 const apiUrl = `http://localhost:${port}`;
 
 function App() {

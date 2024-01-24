@@ -46,8 +46,12 @@ app (`src/client/`) *and* a back-end express API (`src/server/`) in it.
   same time. This is thanks to the `concurrently` package that we have included in this project.
 - The frontend React app will run on Vite's default port, which is usually `5173` - check the terminal once you have
   started the app to see what port it is running on.
-- The server will default to port `4000`, you can change this by adding a `PORT` environment variable to your `.env` if
-  you want (e.g. `PORT=3030`).
+  - If you have other Vite apps running, then this port could be different.
+- The server will run on port `4000` (as set in `.env.example` - remember to create your own `.env` file). If you need 
+  to, you can change this by updating the `VITE_PORT` environment variable in your `.env`.
+  - Note: This environment variable is used in both the server and the client. Vite requires environment variables 
+    to be prefixed with `VITE_`, so do not change the name! Read more about environment variables in Vite 
+    [here](https://vitejs.dev/guide/env-and-mode.html#env-files).
 - Work through each file in the `requirements` directory in numerical order. You can choose whether to work on the
   Client or Server version of each requirement first, but you may find it easier to do Server first.
 
