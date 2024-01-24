@@ -1,5 +1,5 @@
-const jwt = require('jsonwebtoken');
-const { PrismaClient } = require('@prisma/client');
+import jwt from 'jsonwebtoken';
+import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient();
 
 const jwtSecret = 'mysecret';
@@ -25,7 +25,7 @@ const createMovie = async (req, res) => {
     res.json({ data: createdMovie });
 };
 
-module.exports = {
+export {
     getAllMovies,
     createMovie
 };
