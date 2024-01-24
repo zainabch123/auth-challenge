@@ -1,9 +1,10 @@
 // Load our .env file
-require('dotenv').config();
+import { config } from 'dotenv';
+config();
 
 // Import express and cors
-const express = require('express');
-const cors = require('cors');
+import express from 'express';
+import cors from 'cors';
 
 // Set up express
 const app = express();
@@ -17,10 +18,10 @@ app.use(express.urlencoded({ extended: true }));
 
 
 
-const userRouter = require('./routers/user');
+import userRouter from './routers/user.js';
 app.use('/user', userRouter);
 
-const movieRouter = require('./routers/movie');
+import movieRouter from './routers/movie.js';
 app.use('/movie', movieRouter);
 
 
@@ -33,7 +34,7 @@ app.get('*', (req, res) => {
 });
 
 // Start our API server
-const port = process.env.PORT || 4000;
+const port = process.env.VITE_PORT;
 app.listen(port, () => {
     console.log(`\n Server is running on http://localhost:${port}\n`);
 });
