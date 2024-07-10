@@ -26,18 +26,9 @@ app (`src/client/`) *and* a back-end express API (`src/server/`) in it.
 
 **Note:** Since you are using the freedom branch, all we've done is add the require dependencies and place (almost) empty index files into the src/ sub-directories. Everything else is up to you.
 
-1. Fork this repository and clone the fork.
-    1. If you want to use the more challenging `freedom` branch, remember to UNCHECK the checkbox for "Copy the 
-       `main` branch only"
-
-       <img src="./assets/forking_screenshot.png" alt="forking screenshot" width=600></img>
-    2. Then, once you have cloned your fork of the repo, you can run `git checkout freedom` in your terminal.
-    3. If you do not uncheck this box, then you will only be able to access the `main` branch.
-2. Rename `.env.example` to `.env`
-3. Edit the `DATABASE_URL` variable in `.env`, swapping `YOUR_DATABASE_URL` for the URL of your database
-4. Run `npm ci` to install the project dependencies. 
-5. If you're using the main branch, we have already created the Prisma schema and migrations for you. Run `npx prisma migrate reset` to execute the database migrations. Press `y` when it asks if you're sure.
-    - If you're using the freedom branch: good luck and have fun!
+1. Rename `.env.example` to `.env`
+2. Edit the `DATABASE_URL` variable in `.env`, swapping `YOUR_DATABASE_URL` for the URL of your database
+3. Run `npm ci` to install the project dependencies. 
 
 ## Instructions
 
