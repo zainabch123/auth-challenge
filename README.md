@@ -25,11 +25,11 @@ Take a little bit of time to familiarise yourself with the project structure - t
 app (`src/client/`) *and* a back-end express API (`src/server/`) in it.
 
 1. Fork this repository and clone the fork.
-    1. If you want to use the more challenging `freedom` branch, remember to UNCHECK the checkbox for "Copy the 
+    1. If you want to use the more challenging `freedom` branch, or the completely empty `empty` branch, remember to UNCHECK the checkbox for "Copy the 
        `main` branch only"
 
        <img src="./assets/forking_screenshot.png" alt="forking screenshot" width=600></img>
-    2. Then, once you have cloned your fork of the repo, you can run `git checkout freedom` in your terminal.
+    2. Then, once you have cloned your fork of the repo, you can run `git checkout freedom` or `git checkout empty` in your terminal.
     3. If you do not uncheck this box, then you will only be able to access the `main` branch.
 2. Rename `.env.example` to `.env`
 3. Edit the `DATABASE_URL` variable in `.env`, swapping `YOUR_DATABASE_URL` for the URL of your database
