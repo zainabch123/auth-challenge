@@ -32,12 +32,9 @@ app (`src/client/`) *and* a back-end express API (`src/server/`) in it.
     2. Then, once you have cloned your fork of the repo, you can run `git checkout freedom` in your terminal.
     3. If you do not uncheck this box, then you will only be able to access the `main` branch.
 2. Rename `.env.example` to `.env`
-3. Edit the `DATABASE_URL` variable in `.env`, swapping `YOUR_DATABASE_URL` for the URL of the database you just
-   created. Leave `?schema=prisma` at the end.
-4. Edit the `SHADOW_DATABASE_URL` variable in `.env`, swapping `YOUR_SHADOW_DATABASE_URL` for the URL of a shadow
-   database you created in an earlier exercise. Leave `?schema=shadow` at the end.
-5. Run `npm ci` to install the project dependencies. 
-6. We have already created the Prisma schema and migrations for you. Run `npx prisma migrate reset` to execute the 
+3. Edit the `DATABASE_URL` variable in `.env`, swapping `YOUR_DATABASE_URL` for the URL of your database
+4. Run `npm ci` to install the project dependencies. 
+5. If you're using the main branch, we have already created the Prisma schema and migrations for you. Run `npx prisma migrate reset` to execute the 
    database migrations. Press `y` when it asks if you're sure.
 
 ## Instructions
