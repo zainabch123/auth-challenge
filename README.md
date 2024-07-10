@@ -19,9 +19,16 @@ The flow of the application you build looks like this:
 3. The user can then create movies once they have a valid token
 4. The list of displayed movies will update as a user creates them
 
-## Setting up
+## Requirements
 
-- Good luck, have fun
+1. Both your backend _and_ your frontend must exist in this repo. We should be able to run them both together with a single command.
+2. Must use React, Express and an SQL database. Everything else is fair game.
+3. Good luck, have fun!
+
+## Extension
+
+1. Create an admin dashboard where admins can view and delete users.
+2. Introduce a second type of auth. It should be a second option to the user, not a replacement for the original.
 
 ## Example solution
 
